@@ -2,7 +2,10 @@
 import json
 import nltk
 from tqdm import tqdm
-predictor_ner = Predictor.from_path("https://s3-us-west-2.amazonaws.com/allennlp/models/ner-model-2018.12.18.tar.gz",cuda_device=0)
+from allennlp.predictors.predictor import Predictor
+import re
+
+predictor_ner = Predictor.from_path("https://storage.googleapis.com/allennlp-public-models/ner-model-2020.02.10.tar.gz", cuda_device=0)
 def check_contain_upper(password):
     pattern = re.compile('[A-Z]+')
     match = pattern.findall(password)
@@ -63,7 +66,7 @@ def analyze_document(doc):
     # print(sens)
     # input()
     try:
-        all_keywords = RP.found_key_words(sens)
+        all_keywords = found_key_words(sens)
     except Exception as e:
         print(e)
         all_keywords = []
@@ -77,8 +80,8 @@ def analyze_document(doc):
 if __name__ == '__main__':
     
     #data process for grover dataset
-    file = open('/mnt/wanjun/data/p=0.96.jsonl','r',encoding='utf8')
-    out_file = open('/mnt/wanjun/data/p_0.96_kws.jsonl','w',encoding='utf8')
+    file = open('data/p0.94.jsonl','r',encoding='utf8')
+    out_file = open('data/p_0.94_kws.jsonl','w',encoding='utf8')
     # out_file_bea = open('/mnt/wanjun/data/p_0.96_kws_beautiful.jsonl', 'w', encoding='utf8')
     data = file.readlines()
     for line in tqdm(data):
