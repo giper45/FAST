@@ -2,8 +2,6 @@ from enum import IntEnum
 from torch.nn.parameter import Parameter
 import torch
 import torch.nn as nn
-from allennlp.modules.attention import DotProductAttention
-from allennlp.nn import util
 import sys
 import rnn_util
 import math

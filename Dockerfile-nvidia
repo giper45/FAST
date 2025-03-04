@@ -1,0 +1,42 @@
+# FROM python:3.8
+FROM nvidia/cuda:12.6.0-runtime-ubuntu24.04
+
+ARG UID=1000
+ARG GID=1000
+
+# Set non-interactive mode to avoid prompts
+ENV DEBIAN_FRONTEND=noninteractive
+
+
+# Install dependencies
+# RUN apt-get update && apt-get install -y \
+#     software-properties-common \
+#     && add-apt-repository ppa:deadsnakes/ppa \
+#     && apt-get update && apt-get install -y \
+#     python3.8 python3.8-dev python3.8-venv python3.8-distutils \
+#     && apt-get clean \
+#     && rm -rf /var/lib/apt/lists/*
+
+# # Set Python 3.8 as default
+# RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
+RUN apt-get update && apt-get install -y python3 python3-pip build-essential wget
+
+
+# RUN pip install nltk allennlp==1.0.0 allennlp-models==1.0.0 tqdm==4.67.1 spacy==2.2.4
+# RUN python -m spacy download en_core_web_sm
+
+
+RUN groupadd -g ${GID} fast && \ 
+    useradd -m -u ${UID} -g ${GID} -s /bin/bash fast
+
+
+COPY . /home/fast/FAST
+RUN chown -R fast:fast /home/fast/FAST
+USER fast
+# RUN mkdir -p ~/FAST/data &&  wget https://storage.googleapis.com/grover-models/generation_examples/generator=mega~dataset=p0.94.jsonl -O ~/FAST/data/p0.94.jsonl
+# RUN python -m spacy download en_core_web_sm
+
+WORKDIR /home/fast/FAST
+
+
+CMD ["bash"]

@@ -1,3 +1,5 @@
+import sys
+sys.path.append('.')
 from utils.common import *
 import nltk
 import numpy as np

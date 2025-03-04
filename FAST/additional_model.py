@@ -1,7 +1,5 @@
 import torch
 import torch.nn as nn
-from allennlp.modules.attention import DotProductAttention
-from allennlp.nn import util
 from typing import Dict, Tuple, Sequence,Optional
 from .Custom_LSTM import CustomRNN
 

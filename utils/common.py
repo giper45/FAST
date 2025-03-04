@@ -1,7 +1,7 @@
 import json
 import re
 import nltk
-nltk.set_proxy('http://proxy.example.com:3128', ('USERNAME', 'PASSWORD'))
+# nltk.set_proxy('http://proxy.example.com:3128', ('USERNAME', 'PASSWORD'))
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 cachedStopWords = stopwords.words("english") + ['it', 'she', 'in', 'the', 'he', 'i', 'be', 's', 'there', 'here', 'The',

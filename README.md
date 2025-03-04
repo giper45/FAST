@@ -24,6 +24,66 @@ Source code for the EMNLP2020 paper [Neural Deepfake Detection with Factual Stru
 ```
 # Code Usage
 
+### Extract keywords
+```python
+python data_process/extract_keywords.py 
+```
+
+Use the NER model from allenlp
+```
+predictor_ner = Predictor.from_path("https://storage.googleapis.com/allennlp-public-models/ner-model-2020.02.10.tar.gz", cuda_device=0)
+````
+
+
+
+Input: `p0.94.json` (Downloaded in the `docker_entrypoint.sh`) in the format:
+```
+
+  "article",
+  "authors",
+  "date",
+  "domain",
+  "ind30k",
+  "label",
+  "orig_split",
+  "random_score",
+  "split",
+  "title",
+  "url"
+]
+```
+Output: `p_0.94_kws.jsonl`  in the format:
+```
+[
+  "article",
+  "authors",
+  "date",
+  "domain",
+  "ind30k",
+  "information",
+  "label",
+  "orig_split",
+  "random_score",
+  "split",
+  "title",
+  "url"
+]
+```
+Add an `information` field that is filled with several fields.
+
+##  contruct_graph_deepfake.py
+
+```python
+python graph_construction/construct_graph_deepfake.py
+```
+
+Input: kws with deps
+Output: grover_kws_graph_info_addsenidx.jsonl
+
+
+
+
+
 ## code file
 ### Folder
 | code_file | function | usage |

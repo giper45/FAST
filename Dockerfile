@@ -1,11 +1,11 @@
-FROM python:3.8
+# Start with the official CUDA image (which typically includes the latest stable version)
+FROM  python:3.12
+
+RUN pip install torch tqdm --index-url https://download.pytorch.org/whl/cu126
+RUN pip install transformers nltk
 
 ARG UID=1000
 ARG GID=1000
-
-RUN pip install nltk allennlp==1.0.0 allennlp-models==1.0.0 tqdm==4.67.1 spacy==2.2.4
-RUN python -m spacy download en_core_web_sm
-
 
 RUN groupadd -g ${GID} fast && \ 
     useradd -m -u ${UID} -g ${GID} -s /bin/bash fast
@@ -18,6 +18,4 @@ RUN chown -R fast:fast /home/fast/FAST
 WORKDIR /home/fast/FAST
 USER fast
 
-
-
-CMD ["/bin/bash", "/home/fast/FAST/docker_entrypoint.sh"]
+CMD ["/bin/bash"]

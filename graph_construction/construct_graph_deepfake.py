@@ -1,5 +1,6 @@
 from tqdm import tqdm
 import sys
+sys.path.append('.')
 from utils.common import *
 from graph_construction.build_graph import *
 from transformers import (
@@ -24,8 +25,8 @@ def _truncate_seq_pair(tokens_a, tokens_b, max_length):
 
 if __name__ == '__main__':
 
-    inf = '/mnt/wanjun/data/p_0.96_kws.jsonl'
-    outp = '/mnt/wanjun/data/grover_kws_graph_info_addsenidx.jsonl'
+    inf = 'data/p_0.94_kws.jsonl'
+    outp = 'data/grover_kws_graph_info_addsenidx.jsonl'
     
     data = read_data(inf)
     tokenizer = RobertaTokenizer.from_pretrained('roberta-base',do_lower_case=False)
