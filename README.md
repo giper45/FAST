@@ -80,6 +80,18 @@ python graph_construction/construct_graph_deepfake.py
 Input: kws with deps
 Output: grover_kws_graph_info_addsenidx.jsonl
 
+## process news data
+Construct the training data for the next sentence prediction NSP model 
+```python
+python next_sentence_prediction/process_news_data.py
+```
+
+Input: `data/p0.94.jsonl`
+Output: `data/realnews_human_val.tsv` 
+
+
+
+
 
 
 

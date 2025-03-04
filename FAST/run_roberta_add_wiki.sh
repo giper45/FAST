@@ -8,8 +8,8 @@ CUDA_LAUNCH_BLOCKING=1 CUDA_VISIBLE_DEVICES="0" python run_classifier_add_wiki.p
 --dev_file grover_kws_graph_info_addsenidx.jsonl \
 --test_file grover_kws_graph_info_addsenidx.jsonl \
 --eval_all_checkpoints \
---data_dir /mnt/wanjun/data \
---output_dir /mnt/wanjun/models/roberta_base_grover_sens_lstm_nsp_score_weighted_wiki \
+--data_dir /home/fast/FAST/data \
+--output_dir /home/fast/FAST/data/models/roberta_base_grover_sens_lstm_nsp_score_weighted_wiki \
 --max_seq_length 512 \
 --per_gpu_train_batch_size 4 \
 --per_gpu_eval_batch_size 4 \

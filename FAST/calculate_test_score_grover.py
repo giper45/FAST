@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import json
 def score(probs,split='test'):
-    file = open('/mnt/wanjun/data/grover_kws_graph_info.jsonl', 'r', encoding='utf8')
+    file = open('data/grover_kws_graph_info.jsonl', 'r', encoding='utf8')
     lines = file.readlines()
     full_info = []
     for (i, line) in enumerate(lines):

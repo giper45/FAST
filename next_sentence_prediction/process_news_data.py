@@ -11,8 +11,9 @@ import math
 import shutil
 import pathos
 from fuzzywuzzy import fuzz
+import argparse
 
-def extract_documents_sentence(fileNames):
+def extract_documents_sentence(fileNames, is_training):
     def clean_sentence(sentences):
         result = []
         stopWords = set(stopwords.words('english'))
@@ -38,12 +39,18 @@ def extract_documents_sentence(fileNames):
         return result
 
     documents = []
+    def filter_condition(line, is_training):
+        if is_training:
+            return line["split"] == "train"
+        else:
+            return line["split"] == "val" and line['label']=='human'
     for pathDir in fileNames:
         result = []
         data = [json.loads(s) for s in open("{}".format(pathDir), 'r').readlines()]
         for line in data:
+            if filter_condition(line, is_training):
             # if line["split"] == "train":
-            if line["split"] == "val" and line['label']=='human':
+            # if line["split"] == "val" and line['label']=='human':
                 result.append(line["article"])
         documents.extend(result)
     print("num of documents is {}".format(len(documents)))
@@ -138,11 +145,12 @@ def basic_clean_sentence(sentence):
     sen = re.sub(r'[^a-zA-Z0-9,.\'\`!?]+', ' ', sen)
     return sen
 
-def generate_and_delete(sentences, pairDone):
+def generate_and_delete(sentences, pairDone, is_training):
     results = pairDone
     sentence = sentences
     index = 0
-    with open("/mnt/wanjun/data/realnews_human_val.tsv", 'w', encoding='utf-8') as outf:
+    filename = "data/realnews_human_val.tsv" if not is_training else "data/realnews_human_train.tsv"
+    with open(filename, 'w', encoding='utf-8') as outf:
         for line in results:
             outf.write("{}\t{}\t{}\t{}\n".format(index, 1, basic_clean_sentence(sentence[line[0]]), basic_clean_sentence(sentence[line[1]])))
             index += 1
@@ -152,6 +160,13 @@ def generate_and_delete(sentences, pairDone):
 
 
 if __name__ == '__main__':
-    sentences,sentencesClean, pairs, dict = extract_documents_sentence(["/home/v-wanzho/wanjun/deepfake/data/realnews/p=0.96.jsonl"])
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--train", action_='store_true', help="Enable training mode")
+    is_training = parser.parse_args().train
+    if is_training: 
+        print("Training mode enabled")
+    else:
+        print("Validation mode disabled")
+    sentences,sentencesClean, pairs, dict = extract_documents_sentence(["data/p0.94.jsonl"], is_training)
     pairDone = sampling(sentencesClean,sentences, pairs, dict, NSN=10000, processNum=10)
-    generate_and_delete(sentences, pairDone)
+    generate_and_delete(sentences, pairDone, is_training)

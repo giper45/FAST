@@ -29,7 +29,7 @@ from torch.utils.data.distributed import DistributedSampler
 from tqdm import tqdm, trange
 import nltk
 from wikipedia2vec import Wikipedia2Vec
-MODEL_FILE = '/mnt/wanjun/metarial/enwiki_20180420_100d.pkl'
+MODEL_FILE = 'data/enwiki_20180420_100d.pkl'
 from calculate_test_score_grover import score
 wiki2vec = Wikipedia2Vec.load(MODEL_FILE)
 import numpy as np
@@ -56,7 +56,7 @@ from transformers_graph_wiki import (
     get_linear_schedule_with_warmup,
 )
 
-sys.path.append('/home/v-wanzho/wanjun/deepfake/code')
+sys.path.append('.')
 from transformers_graph_wiki import RobertaForGraphBasedSequenceClassification
 from utils_graph_add_wiki import glue_compute_metrics as compute_metrics
 from utils_graph_add_wiki import glue_convert_examples_to_features as convert_examples_to_features
@@ -557,7 +557,7 @@ def main():
     # Required parameters
     parser.add_argument(
         "--data_dir",
-        default='/mnt/wanjun/p\=0.96.jsonl',
+        default='/home/fast/FAST/data/p\=0.96.jsonl',
         type=str,
         required=True,
         help="The input data dir. Should contain the .tsv files (or other data files) for the task.",
@@ -690,13 +690,13 @@ def main():
     parser.add_argument("--max_sentences", type=int, default=30, help="maximum number of sentences")
     parser.add_argument(
         "--test_result_dir",
-        default="/home/v-wanzho/wanjun/deepfake/results/grover_test_results.np",
+        default="/home/fast/FAST/data/results/grover_test_results.np",
         type=str,
         help="Path to store testing result",
     )
     parser.add_argument(
         "--predict_model_dir",
-        default="/home/v-wanzho/wanjun/deepfake/models",
+        default="/home/fast/FAST/data/models",
         type=str,
         help="Path to store checkpoint for evaluation",
     )
