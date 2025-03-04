@@ -8,5 +8,13 @@ build-graph:
 #docker build --build-arg UID=$(shell id -u) --build-arg GID=$(shell id -g) -t docker-fast -f Dockerfile-nvidia .
 	docker build --build-arg UID=$(shell id -u) --build-arg GID=$(shell id -g) -t docker-fast .
 
+stop-graph:
+	docker stop fast-docker
+
 run-graph: build-graph
-	docker run -it $(GPU_FLAG) $(BIND_VOLUMES) --rm docker-fast bash
+	docker run --name fast-docker -it $(GPU_FLAG) $(BIND_VOLUMES) --rm docker-fast bash
+# docker cp data fast-docker:/home/fast/FAST/data
+
+
+go:
+	docker exec -it fast-docker bash

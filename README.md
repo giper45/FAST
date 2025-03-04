@@ -82,19 +82,55 @@ Output: grover_kws_graph_info_addsenidx.jsonl
 
 ## process news data
 Construct the training data for the next sentence prediction NSP model 
+### Validation data
 ```python
 python next_sentence_prediction/process_news_data.py
 ```
-
 Input: `data/p0.94.jsonl`
 Output: `data/realnews_human_val.tsv` 
 
 
+### Training data
+```python
+python next_sentence_prediction/process_news_data.py --train
+```
+Input: `data/p0.94.jsonl`
+Output: `data/realnews_human_train.tsv` 
 
 
 
 
 
+## Train the classifier
+```bash
+./next_sentence_prediction/run_roberta.sh
+```
+Input: 
+* data_dir (`data` folder)
+* train_file `realnews_human_train.tsv` file obtained previously
+* dev_file `realnews_human_val.tsv` file obtained previously
+Output:
+* `data/models/realnews_human_next_sentence_prediction_roberta_large`
+
+
+
+
+## calculate_sentence_pair_score
+After trained the next sentence prediction model, it is possible to add the nsp to the graph_info
+```
+python next_sentence_prediction/calculate_sentence_pair_score.py
+```
+
+Input: `data/grover_kws_graph_info_addsenidx.jsonl` (obtained by constructing the graph)
+
+Output: `data/grover_kws_graph_nsp_hm.jsonl`
+Basically, contains the score of next sentence predictions.
+
+## Train final classifier
+```python
+./FAST/run_roberta_add_wiki.sh
+```
+ 
 
 ## code file
 ### Folder

@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from typing import Dict, Tuple, Sequence,Optional
-from .Custom_LSTM import CustomRNN
+from Custom_LSTM import CustomRNN
 
 
 

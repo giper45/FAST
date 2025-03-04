@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 
 CUDA_LAUNCH_BLOCKING=1 CUDA_VISIBLE_DEVICES="0" python FAST/run_classifier_add_wiki.py \
 --model_type roberta \
@@ -14,6 +13,6 @@ CUDA_LAUNCH_BLOCKING=1 CUDA_VISIBLE_DEVICES="0" python FAST/run_classifier_add_w
 --per_gpu_train_batch_size 4 \
 --per_gpu_eval_batch_size 4 \
 --learning_rate 1e-5 \
+--do_train \
 --num_train_epochs 6 \
-
 

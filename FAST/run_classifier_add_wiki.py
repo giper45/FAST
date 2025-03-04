@@ -33,7 +33,8 @@ MODEL_FILE = 'data/enwiki_20180420_100d.pkl'
 from calculate_test_score_grover import score
 wiki2vec = Wikipedia2Vec.load(MODEL_FILE)
 import numpy as np
-from transformers_graph_wiki import (
+#from transformers_graph_wiki import (
+from transformers import (
     WEIGHTS_NAME,
     AdamW,
     AlbertConfig,
@@ -57,7 +58,7 @@ from transformers_graph_wiki import (
 )
 
 sys.path.append('.')
-from transformers_graph_wiki import RobertaForGraphBasedSequenceClassification
+from modeling_roberta import RobertaForGraphBasedSequenceClassification
 from utils_graph_add_wiki import glue_compute_metrics as compute_metrics
 from utils_graph_add_wiki import glue_convert_examples_to_features as convert_examples_to_features
 from utils_graph_add_wiki import glue_output_modes as output_modes

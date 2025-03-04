@@ -52,12 +52,14 @@ def calculate_sentence_pair_score(sens, model, tokenizer):
 
 
 if __name__ == '__main__':
-    inf = '/home/fast/FAST/data/grover_kws_graph_info.jsonl'
-    outp = '/home/fast/FAST/data/grover_human_nsp.jsonl'
+    inf = 'data/grover_kws_graph_info_addsenidx.jsonl'
+    # inf = 'data/grover_kws_graph_info.jsonl'
+    # outp = 'data/grover_human_nsp.jsonl'
+    outp = 'data/grover_kws_graph_info_nsp_hm.jsonl'
     data = read_data(inf)
     tokenizer = RobertaTokenizer.from_pretrained('roberta-large')
     model = RobertaForSequenceClassification.from_pretrained(
-        '/home/fast/FAST/data/models/realnews_human_next_sentence_prediction_roberta_large/checkpoint-best')
+        'data/models/realnews_human_next_sentence_prediction_roberta_large/checkpoint-best')
        
     device = torch.device("cuda")
     n_gpu = torch.cuda.device_count()

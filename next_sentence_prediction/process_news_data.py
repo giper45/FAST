@@ -161,7 +161,7 @@ def generate_and_delete(sentences, pairDone, is_training):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("--train", action_='store_true', help="Enable training mode")
+    parser.add_argument("--train", action='store_true', help="Enable training mode")
     is_training = parser.parse_args().train
     if is_training: 
         print("Training mode enabled")

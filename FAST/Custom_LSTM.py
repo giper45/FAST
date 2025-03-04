@@ -3,7 +3,7 @@ from torch.nn.parameter import Parameter
 import torch
 import torch.nn as nn
 import sys
-import rnn_util
+import torch.nn.utils.rnn as rnn_utils
 import math
 from typing import Dict, Tuple, Sequence,Optional
 
