@@ -15,6 +15,9 @@ run-graph: build-graph
 	docker run --name fast-docker -it $(GPU_FLAG) $(BIND_VOLUMES) --rm docker-fast bash
 # docker cp data fast-docker:/home/fast/FAST/data
 
+run-example: 
+	docker run --name fast-docker -it $(GPU_FLAG) $(BIND_VOLUMES) -v `pwd`/FAST/run_fast_example.py:/home/fast/FAST/FAST/run_fast_example.py --rm docker-fast bash
+
 
 go:
 	docker exec -it fast-docker bash

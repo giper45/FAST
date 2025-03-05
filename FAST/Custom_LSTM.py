@@ -19,7 +19,8 @@ class CustomRNN(nn.Module):
         #                                    dropout=0,bidirectional=False,layer_norm_enabled=True)
     def forward(self,inputs,seq_lengths):#,score):
 
-        packed_inputs = torch.nn.utils.rnn.pack_padded_sequence(inputs,seq_lengths,batch_first=self.batch_first,enforce_sorted=False)
+        # packed_inputs = torch.nn.utils.rnn.pack_padded_sequence(inputs,seq_lengths,batch_first=self.batch_first,enforce_sorted=False)
+        packed_inputs = torch.nn.utils.rnn.pack_padded_sequence(inputs,seq_lengths.cpu(),batch_first=self.batch_first,enforce_sorted=False)
         # res , (hn,cn) = self.rnn(input=packed_inputs,delta=min_score)
 
         res, (hn, cn) = self.rnn(input=packed_inputs)

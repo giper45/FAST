@@ -24,6 +24,22 @@ Source code for the EMNLP2020 paper [Neural Deepfake Detection with Factual Stru
 ```
 # Code Usage
 
+## Install deps
+```python
+pip install torch tqdm --index-url https://download.pytorch.org/whl/cu121
+pip install transformers==2.9.0 nltk pathos fuzzywuzzy python-Levenshtein scikit-learn tensorboardx six==1.17.0 wikipedia2vec pandas datasets==2.10.1
+```
+
+### Dependencies to download
+
+News Article dataset:
+```
+wget https://storage.googleapis.com/grover-models/generation_examples/generator=mega~dataset=p0.94.jsonl -O /home/fast/FAST/data/p0.94.jsonl
+```
+
+
+
+
 ### Extract keywords
 ```python
 python data_process/extract_keywords.py 
@@ -32,8 +48,9 @@ python data_process/extract_keywords.py
 Use the NER model from allenlp
 ```
 predictor_ner = Predictor.from_path("https://storage.googleapis.com/allennlp-public-models/ner-model-2020.02.10.tar.gz", cuda_device=0)
-````
 
+```
+Analyze the "article" field and generates the keywords.
 
 
 Input: `p0.94.json` (Downloaded in the `docker_entrypoint.sh`) in the format:
@@ -50,7 +67,6 @@ Input: `p0.94.json` (Downloaded in the `docker_entrypoint.sh`) in the format:
   "split",
   "title",
   "url"
-]
 ```
 Output: `p_0.94_kws.jsonl`  in the format:
 ```
@@ -69,16 +85,24 @@ Output: `p_0.94_kws.jsonl`  in the format:
   "url"
 ]
 ```
+
 Add an `information` field that is filled with several fields.
 
-##  contruct_graph_deepfake.py
 
+### Information structure
+* claim: key concepts 
+* entity: the list of entities. 
+* sentence: contain one or more claims, the context in which the claim is made, including the details around it.
+
+
+
+## contruct_graph_deepfake.py
 ```python
 python graph_construction/construct_graph_deepfake.py
 ```
 
-Input: kws with deps
-Output: grover_kws_graph_info_addsenidx.jsonl
+* Input: `p0.94_kws.jsonl`
+* Output: `grover_kws_graph_info_addsenidx.jsonl`
 
 ## process news data
 Construct the training data for the next sentence prediction NSP model 
@@ -86,16 +110,16 @@ Construct the training data for the next sentence prediction NSP model
 ```python
 python next_sentence_prediction/process_news_data.py
 ```
-Input: `data/p0.94.jsonl`
-Output: `data/realnews_human_val.tsv` 
+* Input: `data/p0.94.jsonl`
+* Output: `data/realnews_human_val.tsv` 
 
 
 ### Training data
 ```python
 python next_sentence_prediction/process_news_data.py --train
 ```
-Input: `data/p0.94.jsonl`
-Output: `data/realnews_human_train.tsv` 
+* Input: `data/p0.94.jsonl`
+* Output: `data/realnews_human_train.tsv` 
 
 
 
@@ -113,6 +137,7 @@ Output:
 * `data/models/realnews_human_next_sentence_prediction_roberta_large`
 
 
+The model is able to infer the next sequence prediction.
 
 
 ## calculate_sentence_pair_score
@@ -128,9 +153,18 @@ Basically, contains the score of next sentence predictions.
 
 ## Train final classifier
 ```python
-./FAST/run_roberta_add_wiki.sh
+./FAST/run_roberta_add_wiki_do_train.sh
 ```
- 
+Input:`data/grover_kws_graph_nsp_hm.jsonl` 
+Output: model (0, 1)
+
+### Evaluation
+
+## Data information
+The `data-examples` folder contains a list of files that are used in FAST.
+* p0.94.json
+* p0.94_kws.json
+* grover_kws_graph_info_addsenidx.json
 
 ## code file
 ### Folder
