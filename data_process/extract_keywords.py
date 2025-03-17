@@ -4,8 +4,10 @@ import nltk
 from tqdm import tqdm
 from allennlp.predictors.predictor import Predictor
 import re
+import argparse
 
-predictor_ner = Predictor.from_path("https://storage.googleapis.com/allennlp-public-models/ner-model-2020.02.10.tar.gz", cuda_device=0)
+# predictor_ner = Predictor.from_path("https://storage.googleapis.com/allennlp-public-models/ner-model-2020.02.10.tar.gz", cuda_device=0)
+predictor_ner = Predictor.from_path("https://storage.googleapis.com/allennlp-public-models/ner-model-2020.02.10.tar.gz")
 def check_contain_upper(password):
     pattern = re.compile('[A-Z]+')
     match = pattern.findall(password)
@@ -80,8 +82,17 @@ def analyze_document(doc):
 if __name__ == '__main__':
     
     #data process for grover dataset
-    file = open('data/p0.94.jsonl','r',encoding='utf8')
-    out_file = open('data/p_0.94_kws.jsonl','w',encoding='utf8')
+    parser = argparse.ArgumentParser(description='Process and analyze JSONL data to extract keywords.')
+
+    parser.add_argument('--input_file', type=str, default='data/p0.94.jsonl', help='Path to the input JSONL file (default: data/p0.94.jsonl).')
+    parser.add_argument('--output_file', type=str, default='data/p_0.94_kws.jsonl', help='Path to the output JSONL file (default: data/p_0.94_kws.jsonl).')
+
+    
+    args = parser.parse_args()
+
+    file = open(args.input_file,'r',encoding='utf8')
+    out_file = open(args.output_file,'w',encoding='utf8')
+    
     # out_file_bea = open('/mnt/wanjun/data/p_0.96_kws_beautiful.jsonl', 'w', encoding='utf8')
     data = file.readlines()
     for line in tqdm(data):

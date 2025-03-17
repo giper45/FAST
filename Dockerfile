@@ -19,4 +19,5 @@ RUN chown -R fast:fast /home/fast/FAST
 WORKDIR /home/fast/FAST
 USER fast
 
-CMD ["/bin/bash"]
+
+ENTRYPOINT ["/home/fast/FAST/docker_entrypoint.sh"]

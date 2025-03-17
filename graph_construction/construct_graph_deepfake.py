@@ -1,6 +1,7 @@
 from tqdm import tqdm
 import sys
 sys.path.append('.')
+import argparse
 from utils.common import *
 from graph_construction.build_graph import *
 from transformers import (
@@ -24,9 +25,15 @@ def _truncate_seq_pair(tokens_a, tokens_b, max_length):
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Process and analyze JSONL data to extract keywords.')
 
-    inf = 'data/p_0.94_kws.jsonl'
-    outp = 'data/grover_kws_graph_info_addsenidx.jsonl'
+    parser.add_argument('--input_file', type=str, default='data/p_0.94_kws.jsonl', help='Path to the input JSONL file (default: data/p0.94.jsonl).')
+    parser.add_argument('--output_file', type=str, default='data/grover_kws_graph_info_addsenidx.jsonl', help='Path to the output JSONL file (default: data/p_0.94_kws.jsonl).')
+
+    args = parser.parse_args()
+
+    inf = args.input_file
+    outp = args.output_file
     
     data = read_data(inf)
     tokenizer = RobertaTokenizer.from_pretrained('roberta-base',do_lower_case=False)

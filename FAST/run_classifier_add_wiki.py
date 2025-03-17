@@ -59,7 +59,7 @@ from transformers import (
 
 sys.path.append('.')
 from modeling_roberta import RobertaForGraphBasedSequenceClassification
-from utils_graph_add_wiki import glue_compute_metrics as compute_metrics
+from utils_graph_add_wiki import glue_compute_metrics as compute_metrics, save_metrics_npz
 from utils_graph_add_wiki import glue_convert_examples_to_features as convert_examples_to_features
 from utils_graph_add_wiki import glue_output_modes as output_modes
 from utils_graph_add_wiki import glue_processors as processors
@@ -355,6 +355,9 @@ def evaluate(args, model, tokenizer, checkpoint=None, prefix="", mode='dev'):
                 out_label_ids = np.append(out_label_ids, inputs["labels"].detach().cpu().numpy(), axis=0)
         probs = preds
         eval_loss = eval_loss / nb_eval_steps
+        # out_label_ids
+        # preds
+        # probs
         if args.output_mode == "classification":
             preds = np.argmax(preds, axis=1)
         elif args.output_mode == "regression":
@@ -363,6 +366,9 @@ def evaluate(args, model, tokenizer, checkpoint=None, prefix="", mode='dev'):
         results.update(result)
 
         output_eval_file = os.path.join(eval_output_dir, prefix, "eval_results.txt")
+        output_eval_file_nz = os.path.join("data", "eval_results.npz")
+        save_metrics_npz(output_eval_file_nz, preds, probs, out_label_ids)
+
         with open(output_eval_file, "w") as writer:
             logger.info("***** Eval results {} *****".format(prefix))
             for key in sorted(result.keys()):

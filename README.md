@@ -25,10 +25,17 @@ Source code for the EMNLP2020 paper [Neural Deepfake Detection with Factual Stru
 # Code Usage
 
 ## Install deps
+### For allennlp
+```
+python -m venv nervenv                                                                              
+```
+
+
 ```python
 pip install torch tqdm --index-url https://download.pytorch.org/whl/cu121
 pip install transformers==2.9.0 nltk pathos fuzzywuzzy python-Levenshtein scikit-learn tensorboardx six==1.17.0 wikipedia2vec pandas datasets==2.10.1
 ```
+
 
 ### Dependencies to download
 
@@ -140,6 +147,15 @@ Output:
 The model is able to infer the next sequence prediction.
 
 
+
+
+## Train final classifier
+```python
+./FAST/run_roberta_add_wiki_do_train.sh
+```
+Input:`data/grover_kws_graph_nsp_hm.jsonl` 
+Output: model (0, 1)
+
 ## calculate_sentence_pair_score
 After trained the next sentence prediction model, it is possible to add the nsp to the graph_info
 ```
@@ -151,13 +167,6 @@ Input: `data/grover_kws_graph_info_addsenidx.jsonl` (obtained by constructing th
 Output: `data/grover_kws_graph_nsp_hm.jsonl`
 Basically, contains the score of next sentence predictions.
 
-## Train final classifier
-```python
-./FAST/run_roberta_add_wiki_do_train.sh
-```
-Input:`data/grover_kws_graph_nsp_hm.jsonl` 
-Output: model (0, 1)
-
 ### Evaluation
 
 ## Data information
@@ -165,6 +174,13 @@ The `data-examples` folder contains a list of files that are used in FAST.
 * p0.94.json
 * p0.94_kws.json
 * grover_kws_graph_info_addsenidx.json
+
+
+
+## Run with docker
+
+### Preprocessing
+
 
 ## code file
 ### Folder

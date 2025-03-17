@@ -21,6 +21,8 @@ import numpy as np
 import json
 import re
 import copy
+from scipy.special import softmax
+from sklearn.metrics import recall_score
 from transformers.file_utils import is_tf_available
 from transformers.data.processors.utils import DataProcessor
 
@@ -372,6 +374,17 @@ except (AttributeError, ImportError):
 def is_sklearn_available():
     return _has_sklearn
 
+def save_metrics_npz(filename, preds, probs, labels):
+    logger.info(f"Save metrics in npz file {filename}")
+    probs = softmax(probs, axis=1) 
+
+    np.savez(
+        filename,
+        labels = labels,
+        preds = preds, 
+        probs = probs
+    )
+    pass
 
 if _has_sklearn:
 
@@ -381,9 +394,11 @@ if _has_sklearn:
     def acc_and_f1(preds, labels):
         acc = simple_accuracy(preds, labels)
         f1 = f1_score(y_true=labels, y_pred=preds)
+        recall = recall_score(y_true=labels, y_pred=preds)
         return {
             "acc": acc,
             "f1": f1,
+            "recall": recall,
             "acc_and_f1": (acc + f1) / 2,
         }
 

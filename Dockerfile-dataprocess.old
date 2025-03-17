@@ -24,4 +24,4 @@ USER fast
 
 
 
-CMD ["/bin/bash", "/home/fast/FAST/docker_entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "/home/fast/FAST/utils/construct_graph.sh"]

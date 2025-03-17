@@ -1,0 +1,25 @@
+FROM  python:3.8
+
+RUN pip install allennlp==1.0.0 allennlp-models==1.0.0 nltk==3.9.1 tqdm==4.67.1 spacy==2.2.4 
+RUN python -m spacy download en_core_web_sm
+
+ARG UID=1000
+ARG GID=1000
+
+RUN groupadd -g ${GID} fast && \ 
+    useradd -m -u ${UID} -g ${GID} -s /bin/bash fast
+
+
+COPY . /home/fast/FAST
+RUN chown -R fast:fast /home/fast/FAST
+
+
+WORKDIR /home/fast/FAST
+USER fast
+
+ENTRYPOINT ["/bin/bash", "/home/fast/FAST/utils/construct_graph.sh"]
+### Set the entrypoint to run the Python script with arguments
+#ENTRYPOINT ["python", "data_process/extract_keywords.py"]
+##
+### Define the default command-line arguments
+#CMD ["--input_file", "data/p2.jsonl", "--output_file", "data/p2kws.jsonl"]
