@@ -1,0 +1,195 @@
+{
+    "article": "Patrons crowd the platform at the Washington Metropolitan Area Transit Authority's (WMATA) Metro Center stop in Washington, D.C. on Dec. 20, 2004. Thousands use the public transit system daily to get them in and around the D.C. area. (Karen Bleier/AFP/Getty Images)\nUS Senators Threaten Metro Funding Over Chinese Manufacturer\nWASHINGTON —Federal lawmakers say they’ll approve badly needed funding for Washington’s transit system, but only if it avoids buying new rail cars from China.\nThe Washington Post reported on April 13 that U.S. Senators from Virginia and Maryland proposed the idea in new legislation. It reflects growing concerns that China’s state-owned rail company could hurt American manufacturers and make the system vulnerable to cyber espionage.\nDave Smolensky, spokesman for the China Railway Rolling Stock Corp, dismissed the espionage concerns. The company also said the United States should be promoting competition.\nThe company has won four major U.S. rail car contracts. It is pursuing a Metro contract worth more than $1 billion to build up to 800 of the new rail cars.\nThere are no U.S. transit rail car manufacturers. The bidding deadline is May 31.\n",
+    "domain": "theepochtimes.com",
+    "title": "US Senators Threaten Metro Funding Over Chinese Manufacturer",
+    "date": "April 15, 2019",
+    "authors": null,
+    "ind30k": 29363,
+    "url": "https://www.theepochtimes.com/us-senators-threaten-metro-funding-over-chinese-manufacturer_2880764.html",
+    "label": "human",
+    "orig_split": "train_burner",
+    "split": "train",
+    "random_score": -4.26355665680627,
+    "information": {
+      "keywords": [
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "Patrons crowd the platform at the Washington Metropolitan Area Transit Authority's (WMATA) Metro Center stop in Washington, D.C. on Dec. 20, 2004.",
+            "subject": [],
+            "entity": [
+              "Patrons",
+              "Washington Metropolitan Area Transit Authority",
+              "WMATA",
+              "Metro Center",
+              "Washington , D.C.",
+              "Dec."
+            ]
+          },
+          "sentence": "Patrons crowd the platform at the Washington Metropolitan Area Transit Authority's (WMATA) Metro Center stop in Washington, D.C. on Dec. 20, 2004."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "Thousands use the public transit system daily to get them in and around the D.C. area.",
+            "subject": [],
+            "entity": [
+              "Thousands",
+              "D.C."
+            ]
+          },
+          "sentence": "Thousands use the public transit system daily to get them in and around the D.C. area."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "(Karen Bleier/AFP/Getty Images)",
+            "subject": [],
+            "entity": [
+              "Karen Bleier",
+              "AFP",
+              "Getty Images"
+            ]
+          },
+          "sentence": "(Karen Bleier/AFP/Getty Images)"
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "US Senators Threaten Metro Funding Over Chinese Manufacturer",
+            "subject": [],
+            "entity": [
+              "US Senators Threaten Metro Funding Over Chinese Manufacturer"
+            ]
+          },
+          "sentence": "US Senators Threaten Metro Funding Over Chinese Manufacturer"
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "WASHINGTON —Federal lawmakers say they’ll approve badly needed funding for Washington’s transit system, but only if it avoids buying new rail cars from China.",
+            "subject": [],
+            "entity": [
+              "WASHINGTON",
+              "Federal",
+              "’ll",
+              "Washington",
+              "China"
+            ]
+          },
+          "sentence": "WASHINGTON —Federal lawmakers say they’ll approve badly needed funding for Washington’s transit system, but only if it avoids buying new rail cars from China."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "The Washington Post reported on April 13 that U.S.",
+            "subject": [],
+            "entity": [
+              "The Washington Post",
+              "April",
+              "U.S."
+            ]
+          },
+          "sentence": "The Washington Post reported on April 13 that U.S."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "Senators from Virginia and Maryland proposed the idea in new legislation.",
+            "subject": [],
+            "entity": [
+              "Senators",
+              "Virginia",
+              "Maryland"
+            ]
+          },
+          "sentence": "Senators from Virginia and Maryland proposed the idea in new legislation."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "It reflects growing concerns that China’s state-owned rail company could hurt American manufacturers and make the system vulnerable to cyber espionage.",
+            "subject": [],
+            "entity": [
+              "It",
+              "China",
+              "American"
+            ]
+          },
+          "sentence": "It reflects growing concerns that China’s state-owned rail company could hurt American manufacturers and make the system vulnerable to cyber espionage."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "Dave Smolensky, spokesman for the China Railway Rolling Stock Corp, dismissed the espionage concerns.",
+            "subject": [],
+            "entity": [
+              "Dave Smolensky",
+              "China Railway Rolling Stock Corp"
+            ]
+          },
+          "sentence": "Dave Smolensky, spokesman for the China Railway Rolling Stock Corp, dismissed the espionage concerns."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "The company also said the United States should be promoting competition.",
+            "subject": [],
+            "entity": [
+              "The",
+              "United States"
+            ]
+          },
+          "sentence": "The company also said the United States should be promoting competition."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "The company has won four major U.S. rail car contracts.",
+            "subject": [],
+            "entity": [
+              "The",
+              "U.S."
+            ]
+          },
+          "sentence": "The company has won four major U.S. rail car contracts."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "It is pursuing a Metro contract worth more than $1 billion to build up to 800 of the new rail cars.",
+            "subject": [],
+            "entity": [
+              "It",
+              "Metro"
+            ]
+          },
+          "sentence": "It is pursuing a Metro contract worth more than $1 billion to build up to 800 of the new rail cars."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "There are no U.S. transit rail car manufacturers.",
+            "subject": [],
+            "entity": [
+              "There",
+              "U.S."
+            ]
+          },
+          "sentence": "There are no U.S. transit rail car manufacturers."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "The bidding deadline is May 31.",
+            "subject": [],
+            "entity": [
+              "The",
+              "May"
+            ]
+          },
+          "sentence": "The bidding deadline is May 31."
+        }
+      ]
+    }
+  }

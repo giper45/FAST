@@ -1,0 +1,1210 @@
+{
+    "article": "Patrons crowd the platform at the Washington Metropolitan Area Transit Authority's (WMATA) Metro Center stop in Washington, D.C. on Dec. 20, 2004. Thousands use the public transit system daily to get them in and around the D.C. area. (Karen Bleier/AFP/Getty Images)\nUS Senators Threaten Metro Funding Over Chinese Manufacturer\nWASHINGTON —Federal lawmakers say they’ll approve badly needed funding for Washington’s transit system, but only if it avoids buying new rail cars from China.\nThe Washington Post reported on April 13 that U.S. Senators from Virginia and Maryland proposed the idea in new legislation. It reflects growing concerns that China’s state-owned rail company could hurt American manufacturers and make the system vulnerable to cyber espionage.\nDave Smolensky, spokesman for the China Railway Rolling Stock Corp, dismissed the espionage concerns. The company also said the United States should be promoting competition.\nThe company has won four major U.S. rail car contracts. It is pursuing a Metro contract worth more than $1 billion to build up to 800 of the new rail cars.\nThere are no U.S. transit rail car manufacturers. The bidding deadline is May 31.\n",
+    "domain": "theepochtimes.com",
+    "title": "US Senators Threaten Metro Funding Over Chinese Manufacturer",
+    "date": "April 15, 2019",
+    "authors": null,
+    "ind30k": 29363,
+    "url": "https://www.theepochtimes.com/us-senators-threaten-metro-funding-over-chinese-manufacturer_2880764.html",
+    "label": "human",
+    "orig_split": "train_burner",
+    "split": "train",
+    "random_score": -4.26355665680627,
+    "information": {
+      "keywords": [
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "Patrons crowd the platform at the Washington Metropolitan Area Transit Authority's (WMATA) Metro Center stop in Washington, D.C. on Dec. 20, 2004.",
+            "subject": [],
+            "entity": [
+              "Patrons",
+              "Washington Metropolitan Area Transit Authority",
+              "WMATA",
+              "Metro Center",
+              "Washington , D.C.",
+              "Dec."
+            ]
+          },
+          "sentence": "Patrons crowd the platform at the Washington Metropolitan Area Transit Authority's (WMATA) Metro Center stop in Washington, D.C. on Dec. 20, 2004."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "Thousands use the public transit system daily to get them in and around the D.C. area.",
+            "subject": [],
+            "entity": [
+              "Thousands",
+              "D.C."
+            ]
+          },
+          "sentence": "Thousands use the public transit system daily to get them in and around the D.C. area."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "(Karen Bleier/AFP/Getty Images)",
+            "subject": [],
+            "entity": [
+              "Karen Bleier",
+              "AFP",
+              "Getty Images"
+            ]
+          },
+          "sentence": "(Karen Bleier/AFP/Getty Images)"
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "US Senators Threaten Metro Funding Over Chinese Manufacturer",
+            "subject": [],
+            "entity": [
+              "US Senators Threaten Metro Funding Over Chinese Manufacturer"
+            ]
+          },
+          "sentence": "US Senators Threaten Metro Funding Over Chinese Manufacturer"
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "WASHINGTON —Federal lawmakers say they’ll approve badly needed funding for Washington’s transit system, but only if it avoids buying new rail cars from China.",
+            "subject": [],
+            "entity": [
+              "WASHINGTON",
+              "Federal",
+              "’ll",
+              "Washington",
+              "China"
+            ]
+          },
+          "sentence": "WASHINGTON —Federal lawmakers say they’ll approve badly needed funding for Washington’s transit system, but only if it avoids buying new rail cars from China."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "The Washington Post reported on April 13 that U.S.",
+            "subject": [],
+            "entity": [
+              "The Washington Post",
+              "April",
+              "U.S."
+            ]
+          },
+          "sentence": "The Washington Post reported on April 13 that U.S."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "Senators from Virginia and Maryland proposed the idea in new legislation.",
+            "subject": [],
+            "entity": [
+              "Senators",
+              "Virginia",
+              "Maryland"
+            ]
+          },
+          "sentence": "Senators from Virginia and Maryland proposed the idea in new legislation."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "It reflects growing concerns that China’s state-owned rail company could hurt American manufacturers and make the system vulnerable to cyber espionage.",
+            "subject": [],
+            "entity": [
+              "It",
+              "China",
+              "American"
+            ]
+          },
+          "sentence": "It reflects growing concerns that China’s state-owned rail company could hurt American manufacturers and make the system vulnerable to cyber espionage."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "Dave Smolensky, spokesman for the China Railway Rolling Stock Corp, dismissed the espionage concerns.",
+            "subject": [],
+            "entity": [
+              "Dave Smolensky",
+              "China Railway Rolling Stock Corp"
+            ]
+          },
+          "sentence": "Dave Smolensky, spokesman for the China Railway Rolling Stock Corp, dismissed the espionage concerns."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "The company also said the United States should be promoting competition.",
+            "subject": [],
+            "entity": [
+              "The",
+              "United States"
+            ]
+          },
+          "sentence": "The company also said the United States should be promoting competition."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "The company has won four major U.S. rail car contracts.",
+            "subject": [],
+            "entity": [
+              "The",
+              "U.S."
+            ]
+          },
+          "sentence": "The company has won four major U.S. rail car contracts."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "It is pursuing a Metro contract worth more than $1 billion to build up to 800 of the new rail cars.",
+            "subject": [],
+            "entity": [
+              "It",
+              "Metro"
+            ]
+          },
+          "sentence": "It is pursuing a Metro contract worth more than $1 billion to build up to 800 of the new rail cars."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "There are no U.S. transit rail car manufacturers.",
+            "subject": [],
+            "entity": [
+              "There",
+              "U.S."
+            ]
+          },
+          "sentence": "There are no U.S. transit rail car manufacturers."
+        },
+        {
+          "keywords": {
+            "noun": [],
+            "claim": "The bidding deadline is May 31.",
+            "subject": [],
+            "entity": [
+              "The",
+              "May"
+            ]
+          },
+          "sentence": "The bidding deadline is May 31."
+        }
+      ],
+      "graph": {
+        "nodes": [
+          {
+            "text": "Washington , D.C.",
+            "words": [
+              "Washington",
+              ",",
+              "D.C",
+              "."
+            ],
+            "sentence_id": 0,
+            "spans": [
+              20,
+              28
+            ],
+            "spans_check": [
+              "Ġin",
+              "ĠWashington",
+              ",",
+              "ĠD",
+              ".",
+              "C",
+              ".",
+              "Ġon"
+            ]
+          },
+          {
+            "text": "WMATA",
+            "words": [
+              "WMATA"
+            ],
+            "sentence_id": 0,
+            "spans": [
+              14,
+              16
+            ],
+            "spans_check": [
+              "WM",
+              "ATA"
+            ]
+          },
+          {
+            "text": "Washington Metropolitan Area Transit Authority",
+            "words": [
+              "Washington",
+              "Metropolitan",
+              "Area",
+              "Transit",
+              "Authority"
+            ],
+            "sentence_id": 0,
+            "spans": [
+              7,
+              12
+            ],
+            "spans_check": [
+              "ĠWashington",
+              "ĠMetropolitan",
+              "ĠArea",
+              "ĠTransit",
+              "ĠAuthority"
+            ]
+          },
+          {
+            "text": "Patrons",
+            "words": [
+              "Patrons"
+            ],
+            "sentence_id": 0,
+            "spans": [
+              0,
+              2
+            ],
+            "spans_check": [
+              "Pat",
+              "rons"
+            ]
+          },
+          {
+            "text": "Metro Center",
+            "words": [
+              "Metro",
+              "Center"
+            ],
+            "sentence_id": 0,
+            "spans": [
+              17,
+              19
+            ],
+            "spans_check": [
+              "ĠMetro",
+              "ĠCenter"
+            ]
+          },
+          {
+            "text": "Dec.",
+            "words": [
+              "Dec",
+              "."
+            ],
+            "sentence_id": 0,
+            "spans": [
+              28,
+              30
+            ],
+            "spans_check": [
+              "ĠDec",
+              "."
+            ]
+          },
+          {
+            "text": "D.C.",
+            "words": [
+              "D.C",
+              "."
+            ],
+            "sentence_id": 1,
+            "spans": [
+              48,
+              52
+            ],
+            "spans_check": [
+              "ĠD",
+              ".",
+              "C",
+              "."
+            ]
+          },
+          {
+            "text": "Thousands",
+            "words": [
+              "Thousands"
+            ],
+            "sentence_id": 1,
+            "spans": [
+              34,
+              35
+            ],
+            "spans_check": [
+              "Thousands"
+            ]
+          },
+          {
+            "text": "Getty Images",
+            "words": [
+              "Getty",
+              "Images"
+            ],
+            "sentence_id": 2,
+            "spans": [
+              62,
+              64
+            ],
+            "spans_check": [
+              "Getty",
+              "ĠImages"
+            ]
+          },
+          {
+            "text": "AFP",
+            "words": [
+              "AFP"
+            ],
+            "sentence_id": 2,
+            "spans": [
+              60,
+              61
+            ],
+            "spans_check": [
+              "AFP"
+            ]
+          },
+          {
+            "text": "Karen Bleier",
+            "words": [
+              "Karen",
+              "Bleier"
+            ],
+            "sentence_id": 2,
+            "spans": [
+              55,
+              59
+            ],
+            "spans_check": [
+              "K",
+              "aren",
+              "ĠBle",
+              "ier"
+            ]
+          },
+          {
+            "text": "US Senators Threaten Metro Funding Over Chinese Manufacturer",
+            "words": [
+              "US",
+              "Senators",
+              "Threaten",
+              "Metro",
+              "Funding",
+              "Over",
+              "Chinese",
+              "Manufacturer"
+            ],
+            "sentence_id": 3,
+            "spans": [
+              65,
+              74
+            ],
+            "spans_check": [
+              "US",
+              "ĠSenators",
+              "ĠThreat",
+              "en",
+              "ĠMetro",
+              "ĠFunding",
+              "ĠOver",
+              "ĠChinese",
+              "ĠManufacturer"
+            ]
+          },
+          {
+            "text": "WASHINGTON",
+            "words": [
+              "WASHINGTON"
+            ],
+            "sentence_id": 4,
+            "spans": [
+              74,
+              75
+            ],
+            "spans_check": [
+              "WASHINGTON"
+            ]
+          },
+          {
+            "text": "China",
+            "words": [
+              "China"
+            ],
+            "sentence_id": 4,
+            "spans": [
+              105,
+              106
+            ],
+            "spans_check": [
+              "ĠChina"
+            ]
+          },
+          {
+            "text": "Federal",
+            "words": [
+              "Federal"
+            ],
+            "sentence_id": 4,
+            "spans": [
+              76,
+              77
+            ],
+            "spans_check": [
+              "Federal"
+            ]
+          },
+          {
+            "text": "Washington",
+            "words": [
+              "Washington"
+            ],
+            "sentence_id": 4,
+            "spans": [
+              88,
+              89
+            ],
+            "spans_check": [
+              "ĠWashington"
+            ]
+          },
+          {
+            "text": "U.S.",
+            "words": [
+              "U.S",
+              "."
+            ],
+            "sentence_id": 5,
+            "spans": [
+              115,
+              119
+            ],
+            "spans_check": [
+              "ĠU",
+              ".",
+              "S",
+              "."
+            ]
+          },
+          {
+            "text": "April",
+            "words": [
+              "April"
+            ],
+            "sentence_id": 5,
+            "spans": [
+              112,
+              113
+            ],
+            "spans_check": [
+              "ĠApril"
+            ]
+          },
+          {
+            "text": "The Washington Post",
+            "words": [
+              "Washington",
+              "Post"
+            ],
+            "sentence_id": 5,
+            "spans": [
+              107,
+              110
+            ],
+            "spans_check": [
+              "The",
+              "ĠWashington",
+              "ĠPost"
+            ]
+          },
+          {
+            "text": "Maryland",
+            "words": [
+              "Maryland"
+            ],
+            "sentence_id": 6,
+            "spans": [
+              123,
+              125
+            ],
+            "spans_check": [
+              "Ġand",
+              "ĠMaryland"
+            ]
+          },
+          {
+            "text": "Virginia",
+            "words": [
+              "Virginia"
+            ],
+            "sentence_id": 6,
+            "spans": [
+              122,
+              123
+            ],
+            "spans_check": [
+              "ĠVirginia"
+            ]
+          },
+          {
+            "text": "Senators",
+            "words": [
+              "Senators"
+            ],
+            "sentence_id": 6,
+            "spans": [
+              119,
+              121
+            ],
+            "spans_check": [
+              "Sen",
+              "ators"
+            ]
+          },
+          {
+            "text": "China",
+            "words": [
+              "China"
+            ],
+            "sentence_id": 7,
+            "spans": [
+              137,
+              138
+            ],
+            "spans_check": [
+              "ĠChina"
+            ]
+          },
+          {
+            "text": "American",
+            "words": [
+              "American"
+            ],
+            "sentence_id": 7,
+            "spans": [
+              148,
+              149
+            ],
+            "spans_check": [
+              "ĠAmerican"
+            ]
+          },
+          {
+            "text": "China Railway Rolling Stock Corp",
+            "words": [
+              "China",
+              "Railway",
+              "Rolling",
+              "Stock",
+              "Corp"
+            ],
+            "sentence_id": 8,
+            "spans": [
+              168,
+              173
+            ],
+            "spans_check": [
+              "ĠChina",
+              "ĠRailway",
+              "ĠRolling",
+              "ĠStock",
+              "ĠCorp"
+            ]
+          },
+          {
+            "text": "Dave Smolensky",
+            "words": [
+              "Dave",
+              "Smolensky"
+            ],
+            "sentence_id": 8,
+            "spans": [
+              159,
+              164
+            ],
+            "spans_check": [
+              "Dave",
+              "ĠSm",
+              "ol",
+              "ens",
+              "ky"
+            ]
+          },
+          {
+            "text": "United States",
+            "words": [
+              "United",
+              "States"
+            ],
+            "sentence_id": 9,
+            "spans": [
+              184,
+              186
+            ],
+            "spans_check": [
+              "ĠUnited",
+              "ĠStates"
+            ]
+          },
+          {
+            "text": "U.S.",
+            "words": [
+              "U.S",
+              "."
+            ],
+            "sentence_id": 10,
+            "spans": [
+              197,
+              201
+            ],
+            "spans_check": [
+              "ĠU",
+              ".",
+              "S",
+              "."
+            ]
+          },
+          {
+            "text": "Metro",
+            "words": [
+              "Metro"
+            ],
+            "sentence_id": 11,
+            "spans": [
+              209,
+              210
+            ],
+            "spans_check": [
+              "ĠMetro"
+            ]
+          },
+          {
+            "text": "U.S.",
+            "words": [
+              "U.S",
+              "."
+            ],
+            "sentence_id": 12,
+            "spans": [
+              231,
+              235
+            ],
+            "spans_check": [
+              "ĠU",
+              ".",
+              "S",
+              "."
+            ]
+          },
+          {
+            "text": "There",
+            "words": [
+              "There"
+            ],
+            "sentence_id": 12,
+            "spans": [
+              228,
+              229
+            ],
+            "spans_check": [
+              "There"
+            ]
+          },
+          {
+            "text": "May",
+            "words": [
+              "May"
+            ],
+            "sentence_id": 13,
+            "spans": [
+              244,
+              245
+            ],
+            "spans_check": [
+              "ĠMay"
+            ]
+          }
+        ],
+        "edges": [
+          [
+            6,
+            7,
+            "inner"
+          ],
+          [
+            0,
+            1,
+            "inner"
+          ],
+          [
+            19,
+            20,
+            "inner"
+          ],
+          [
+            4,
+            5,
+            "inner"
+          ],
+          [
+            16,
+            27,
+            "inter"
+          ],
+          [
+            16,
+            29,
+            "inter"
+          ],
+          [
+            2,
+            3,
+            "inner"
+          ],
+          [
+            13,
+            22,
+            "inter"
+          ],
+          [
+            9,
+            10,
+            "inner"
+          ],
+          [
+            20,
+            21,
+            "inner"
+          ],
+          [
+            27,
+            29,
+            "inter"
+          ],
+          [
+            24,
+            25,
+            "inner"
+          ],
+          [
+            3,
+            4,
+            "inner"
+          ],
+          [
+            22,
+            23,
+            "inner"
+          ],
+          [
+            29,
+            30,
+            "inner"
+          ],
+          [
+            12,
+            13,
+            "inner"
+          ],
+          [
+            16,
+            17,
+            "inner"
+          ],
+          [
+            8,
+            9,
+            "inner"
+          ],
+          [
+            17,
+            18,
+            "inner"
+          ],
+          [
+            1,
+            2,
+            "inner"
+          ],
+          [
+            13,
+            14,
+            "inner"
+          ],
+          [
+            14,
+            15,
+            "inner"
+          ]
+        ],
+        "all_tokens": [
+          "Pat",
+          "rons",
+          "Ġcrowd",
+          "Ġthe",
+          "Ġplatform",
+          "Ġat",
+          "Ġthe",
+          "ĠWashington",
+          "ĠMetropolitan",
+          "ĠArea",
+          "ĠTransit",
+          "ĠAuthority",
+          "'s",
+          "Ġ(",
+          "WM",
+          "ATA",
+          ")",
+          "ĠMetro",
+          "ĠCenter",
+          "Ġstop",
+          "Ġin",
+          "ĠWashington",
+          ",",
+          "ĠD",
+          ".",
+          "C",
+          ".",
+          "Ġon",
+          "ĠDec",
+          ".",
+          "Ġ20",
+          ",",
+          "Ġ2004",
+          ".",
+          "Thousands",
+          "Ġuse",
+          "Ġthe",
+          "Ġpublic",
+          "Ġtransit",
+          "Ġsystem",
+          "Ġdaily",
+          "Ġto",
+          "Ġget",
+          "Ġthem",
+          "Ġin",
+          "Ġand",
+          "Ġaround",
+          "Ġthe",
+          "ĠD",
+          ".",
+          "C",
+          ".",
+          "Ġarea",
+          ".",
+          "(",
+          "K",
+          "aren",
+          "ĠBle",
+          "ier",
+          "/",
+          "AFP",
+          "/",
+          "Getty",
+          "ĠImages",
+          ")",
+          "US",
+          "ĠSenators",
+          "ĠThreat",
+          "en",
+          "ĠMetro",
+          "ĠFunding",
+          "ĠOver",
+          "ĠChinese",
+          "ĠManufacturer",
+          "WASHINGTON",
+          "ĠâĢĶ",
+          "Federal",
+          "Ġlawmakers",
+          "Ġsay",
+          "Ġthey",
+          "âĢ",
+          "Ļ",
+          "ll",
+          "Ġapprove",
+          "Ġbadly",
+          "Ġneeded",
+          "Ġfunding",
+          "Ġfor",
+          "ĠWashington",
+          "âĢ",
+          "Ļ",
+          "s",
+          "Ġtransit",
+          "Ġsystem",
+          ",",
+          "Ġbut",
+          "Ġonly",
+          "Ġif",
+          "Ġit",
+          "Ġavoids",
+          "Ġbuying",
+          "Ġnew",
+          "Ġrail",
+          "Ġcars",
+          "Ġfrom",
+          "ĠChina",
+          ".",
+          "The",
+          "ĠWashington",
+          "ĠPost",
+          "Ġreported",
+          "Ġon",
+          "ĠApril",
+          "Ġ13",
+          "Ġthat",
+          "ĠU",
+          ".",
+          "S",
+          ".",
+          "Sen",
+          "ators",
+          "Ġfrom",
+          "ĠVirginia",
+          "Ġand",
+          "ĠMaryland",
+          "Ġproposed",
+          "Ġthe",
+          "Ġidea",
+          "Ġin",
+          "Ġnew",
+          "Ġlegislation",
+          ".",
+          "It",
+          "Ġreflects",
+          "Ġgrowing",
+          "Ġconcerns",
+          "Ġthat",
+          "ĠChina",
+          "âĢ",
+          "Ļ",
+          "s",
+          "Ġstate",
+          "-",
+          "owned",
+          "Ġrail",
+          "Ġcompany",
+          "Ġcould",
+          "Ġhurt",
+          "ĠAmerican",
+          "Ġmanufacturers",
+          "Ġand",
+          "Ġmake",
+          "Ġthe",
+          "Ġsystem",
+          "Ġvulnerable",
+          "Ġto",
+          "Ġcyber",
+          "Ġespionage",
+          ".",
+          "Dave",
+          "ĠSm",
+          "ol",
+          "ens",
+          "ky",
+          ",",
+          "Ġspokesman",
+          "Ġfor",
+          "Ġthe",
+          "ĠChina",
+          "ĠRailway",
+          "ĠRolling",
+          "ĠStock",
+          "ĠCorp",
+          ",",
+          "Ġdismissed",
+          "Ġthe",
+          "Ġespionage",
+          "Ġconcerns",
+          ".",
+          "The",
+          "Ġcompany",
+          "Ġalso",
+          "Ġsaid",
+          "Ġthe",
+          "ĠUnited",
+          "ĠStates",
+          "Ġshould",
+          "Ġbe",
+          "Ġpromoting",
+          "Ġcompetition",
+          ".",
+          "The",
+          "Ġcompany",
+          "Ġhas",
+          "Ġwon",
+          "Ġfour",
+          "Ġmajor",
+          "ĠU",
+          ".",
+          "S",
+          ".",
+          "Ġrail",
+          "Ġcar",
+          "Ġcontracts",
+          ".",
+          "It",
+          "Ġis",
+          "Ġpursuing",
+          "Ġa",
+          "ĠMetro",
+          "Ġcontract",
+          "Ġworth",
+          "Ġmore",
+          "Ġthan",
+          "Ġ$",
+          "1",
+          "Ġbillion",
+          "Ġto",
+          "Ġbuild",
+          "Ġup",
+          "Ġto",
+          "Ġ800",
+          "Ġof",
+          "Ġthe",
+          "Ġnew",
+          "Ġrail",
+          "Ġcars",
+          ".",
+          "There",
+          "Ġare",
+          "Ġno",
+          "ĠU",
+          ".",
+          "S",
+          ".",
+          "Ġtransit",
+          "Ġrail",
+          "Ġcar",
+          "Ġmanufacturers",
+          ".",
+          "The",
+          "Ġbidding",
+          "Ġdeadline",
+          "Ġis",
+          "ĠMay",
+          "Ġ31",
+          "."
+        ],
+        "drop_nodes": [],
+        "sentence_to_node_id": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9,
+            10
+          ],
+          [
+            11
+          ],
+          [
+            12,
+            13,
+            14,
+            15
+          ],
+          [
+            16,
+            17,
+            18
+          ],
+          [
+            19,
+            20,
+            21
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            26
+          ],
+          [
+            27
+          ],
+          [
+            28
+          ],
+          [
+            29,
+            30
+          ],
+          [
+            31
+          ]
+        ],
+        "sentence_start_end_idx_pair": [
+          [
+            0,
+            34
+          ],
+          [
+            34,
+            54
+          ],
+          [
+            54,
+            65
+          ],
+          [
+            65,
+            74
+          ],
+          [
+            74,
+            107
+          ],
+          [
+            107,
+            119
+          ],
+          [
+            119,
+            132
+          ],
+          [
+            132,
+            159
+          ],
+          [
+            159,
+            179
+          ],
+          [
+            179,
+            191
+          ],
+          [
+            191,
+            205
+          ],
+          [
+            205,
+            228
+          ],
+          [
+            228,
+            240
+          ],
+          [
+            240,
+            247
+          ]
+        ]
+      }
+    }
+  }
